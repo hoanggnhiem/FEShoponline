@@ -1,0 +1,130 @@
+.contactHeader {
+  text-align: center;
+  color: var(--primary);
+  background-color: #f4f5f8;
+  padding: 80px 0;
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 6.4rem;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+}
+
+.linkHome {
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.contactInfo,
+.getInTouch {
+  background-color: #f5f5f5;
+  margin: 0 15px;
+  padding: 50px 30px;
+}
+.contactInfo {
+  width: 370px;
+  display: block;
+}
+.getInTouch {
+  width: 710px;
+}
+.h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.phone,
+.email {
+  margin-bottom: 20px;
+}
+.phone,
+.email,
+.address {
+  display: flex;
+}
+.phoneTitle,
+.emailTitle,
+.addressTitle {
+  min-width: 80px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.phoneNumber,
+.emailAddress,
+.txtAddress {
+  color: var(--primary);
+}
+.emailAddresses,
+.phoneNumbers,
+.txtAddresses {
+  display: flex;
+  flex-direction: column;
+  a + a,
+  p + p {
+    margin-top: 10px;
+  }
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.subject,
+.message {
+  margin-bottom: 25px;
+}
+.firstName {
+  margin-right: 30px;
+}
+.firstName,
+.lastName {
+  flex: 1;
+}
+
+.firstNameTitle,
+.lastNameTitle,
+.subjectTitle,
+.messageTitle {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  display: block;
+}
+
+.messageInput,
+.subjectInput,
+.nameInput {
+  font-size: 1.4rem;
+  padding: 12px 15px;
+  line-height: 1;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 3px;
+  width: 100%;
+
+  &:focus {
+    outline: 0px;
+    border-color: rgb(255, 112, 4);
+    transition: all linear 0.2s;
+  }
+}
+.btnSend {
+  background-color: var(--orange);
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 16px 0;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: rgb(47, 51, 58);
+  }
+}

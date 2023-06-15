@@ -1,0 +1,14 @@
+.Footer {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 26px 0;
+  p {
+    font-size: 1.4rem;
+  }
+}

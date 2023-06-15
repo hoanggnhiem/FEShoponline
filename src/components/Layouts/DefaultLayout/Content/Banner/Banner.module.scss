@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-link {
+}
+.banner-link-left,
+.banner-link-right {
+  padding: 0 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.banner-link-left {
+  .link {
+    position: absolute;
+    color: var(--primary);
+    top: 30%;
+    right: 16px;
+  }
+}
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  width: 230px;
+}
+.des {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.banner-link-right {
+  .link {
+    position: absolute;
+    color: var(--primary);
+    top: 30%;
+    left: 26px;
+  }
+}
+.content {
+  position: relative;
+}

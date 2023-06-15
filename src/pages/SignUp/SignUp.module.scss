@@ -1,0 +1,166 @@
+.loginBedHeader {
+  text-align: center;
+  color: var(--primary);
+  background-color: #f4f5f8;
+  padding: 80px 0;
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 6.4rem;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+}
+
+.linkHome {
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.wrapperLogin {
+  max-width: 1200px;
+  margin: auto;
+}
+.login {
+  display: block;
+  max-width: 585px;
+  margin: auto;
+  padding: 50px 30px;
+  box-shadow: rgb(0 0 0 / 6%) 0px 0px 12px 3px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.firstName {
+  margin-right: 30px;
+}
+.firstName,
+.lastName {
+  flex: 1;
+}
+
+.email,
+.password,
+.phone,
+.confirmPassword {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.emailTitle,
+.phoneTitle,
+.passwordTitle,
+.confirmPasswordTitle {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.firstNameTitle,
+.lastNameTitle {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  display: block;
+}
+.emailInput,
+.nameInput,
+.passwordsInput,
+.phoneInput,
+.confirmPasswordInput {
+  font-size: 1.4rem;
+  padding: 12px 15px;
+  line-height: 1;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 3px;
+  width: 100%;
+
+  &:focus {
+    outline: 0px;
+    border-color: rgb(255, 112, 4);
+    transition: all linear 0.2s;
+  }
+}
+
+.confirm,
+.des {
+  margin-bottom: 25px;
+}
+.confirmInput {
+  margin-right: 5px;
+  background-color: #fff;
+  border: 1px solid var(--orange);
+  cursor: pointer;
+}
+.confirmText {
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.txtDes {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.linkDes {
+  color: #000;
+  font-weight: 600;
+}
+.btnSignUp {
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 25px;
+  &:hover {
+    background-color: rgb(47, 51, 58);
+    color: rgb(235, 235, 235);
+    transition: all linear 0.2s;
+  }
+}
+.btnSignUp.disable {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+.btnOther {
+  display: flex;
+  justify-content: space-between;
+}
+.linkCreate {
+  background-color: rgb(47, 51, 58);
+  font-size: 1.4rem;
+  text-align: center;
+  display: block;
+  flex: 1;
+
+  font-weight: 500;
+  padding: 16px 20px;
+  margin-right: 30px;
+  &:hover {
+    color: rgb(47, 51, 58);
+    background-color: rgb(235, 235, 235);
+  }
+}
+.linkSignin {
+  background-color: rgb(235, 235, 235);
+  color: rgb(47, 51, 58);
+  font-size: 1.4rem;
+  text-align: center;
+  flex: 1;
+
+  display: block;
+  font-weight: 500;
+  padding: 16px 20px;
+  &:hover {
+    background-color: rgb(47, 51, 58);
+    color: rgb(235, 235, 235);
+  }
+}

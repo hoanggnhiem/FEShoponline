@@ -1,0 +1,84 @@
+.news {
+}
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+.header {
+  text-align: center;
+  height: 170px;
+  .title {
+    font-size: 3.6rem;
+    margin-bottom: 24px;
+  }
+  .des {
+    max-width: 465px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.contentWrapper {
+  background-color: #f4f5f8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 502px;
+}
+.imgLink {
+  overflow: hidden;
+  display: block;
+  flex: 1;
+}
+.img {
+  overflow: hidden;
+  height: 272px;
+  width: 100%;
+}
+.textContent {
+  padding: 20px;
+}
+.titleLink {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  color: rgb(33, 33, 33);
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.author {
+  display: flex;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  .name {
+    margin-right: 25px;
+  }
+}
+.des {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+.textContent {
+  position: relative;
+  flex: 1;
+}
+.btnRead {
+  margin-top: 10px;
+  padding: 14px 10px;
+  font-size: 1.4rem;
+  display: inline-block;
+  background-color: #474747;
+  color: #fff;
+  width: 120px;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 2px;
+  text-align: center;
+  transition: all linear 0.2s;
+  &:hover {
+    background-color: var(--orange);
+    color: #fff;
+  }
+}

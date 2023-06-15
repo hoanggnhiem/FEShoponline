@@ -1,0 +1,210 @@
+.productDetailsHeader {
+  text-align: center;
+  color: var(--primary);
+  background-color: #f4f5f8;
+  padding: 80px 0;
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 6.4rem;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+}
+
+.linkHome {
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.availability {
+  font-size: 1.3rem;
+  .availabilityTxt {
+    font-weight: 500;
+  }
+}
+
+.nameTxt {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.costTxt {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.desTxt {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+.select {
+  margin-top: 20px;
+}
+.size,
+.color {
+  margin-top: 10px;
+}
+
+.materialTxt,
+.colorTxt,
+.sizeTxt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 5px;
+}
+.materialSelect,
+.colorSelect,
+.sizeSelect {
+  display: flex;
+  min-height: 45px;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  position: relative;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 3px;
+  padding: 15px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+  }
+}
+.materialListSelect,
+.colorListSelect,
+.sizeListSelect {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  border: 1px solid rgb(235, 235, 235);
+  display: none;
+  width: 100%;
+  cursor: pointer;
+  z-index: 99;
+  box-shadow: rgb(0 0 0 / 6%) 0px 0px 12px 3px;
+}
+
+.materialSelect:hover {
+  .materialListSelect {
+    display: block;
+  }
+}
+
+.colorSelect:hover {
+  .colorListSelect {
+    display: block;
+  }
+}
+.sizeSelect:hover {
+  .sizeListSelect {
+    display: block;
+  }
+}
+.sizeItem + .sizeItem,
+.colorItem + .colorItem,
+.materialItem + .materialItem {
+  border-top: 1px solid rgb(235, 235, 235);
+}
+
+.materialItem,
+.colorItem,
+.sizeItem {
+  transition: all linear 0.2s;
+  min-height: 45px;
+  padding: 15px;
+  background-color: #fff;
+  &:hover {
+    background-color: var(--orange);
+  }
+}
+.materialItem.active,
+.colorItem.active,
+.sizeItem.active {
+  background-color: var(--orange);
+}
+.selectQuan {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  height: 45px;
+  margin-top: 30px;
+}
+.quan {
+  display: flex;
+  flex: 1;
+  margin-left: 1px;
+}
+
+.cal {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--orange);
+  cursor: pointer;
+  transition: all linear 0.2s;
+  p {
+    font-size: 2.6rem;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+  }
+}
+
+.cal:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.quanTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  border-top: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+.Add {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  margin-right: 20px;
+  transition: all linear 0.2s;
+  &:hover {
+    background-color: #2f333a;
+  }
+}
+.btnAdd {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 15px 38px;
+  color: #fff;
+}

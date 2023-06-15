@@ -1,0 +1,91 @@
+.contact {
+  margin-top: 100px;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  color: #fff;
+  margin: auto;
+  padding: 100px 0;
+}
+.iconBtn {
+  color: #fff;
+}
+.aboutUs {
+  .des {
+    max-width: 290px;
+  }
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.des {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.iconBtn {
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: all linear 0.2s;
+  &:hover {
+    background-color: var(--orange);
+  }
+}
+.iconLink {
+  font-size: 1.4rem;
+}
+.infoItem,
+.accountItem {
+  margin-bottom: 8px;
+}
+.infoLink,
+.accountLink {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.divSub {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 50px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  width: 100%;
+  text-transform: capitalize;
+  background: transparent;
+  border: 1px solid rgb(67, 71, 78);
+  border-radius: 0px;
+  text-align: left;
+  box-shadow: none;
+  padding-left: 20px;
+  padding-right: 10px;
+  transition: all linear 0.2s;
+}
+.input:focus {
+  border-color: var(--orange);
+  outline: 0px;
+}
+.btnSub {
+  width: 150px;
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 17px 0;
+  margin-top: 20px;
+  transition: all linear 0.2s;
+  &:hover {
+    background-color: black;
+  }
+}

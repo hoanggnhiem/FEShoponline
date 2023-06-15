@@ -1,0 +1,133 @@
+.wrapper {
+  text-align: center;
+
+  padding: 30px calc(15px);
+
+  height: 102px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background: none;
+  border: none;
+  width: 24px;
+  font-size: 22px;
+  color: var(--primary);
+  cursor: pointer;
+  position: relative;
+}
+.dvTool {
+  position: relative;
+}
+.dvTool + .dvTool {
+  margin-left: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 5px);
+    border-left: 1px solid #000000;
+    top: 2px;
+    left: -18px;
+  }
+}
+.iconList {
+  position: absolute;
+  text-align: left;
+  width: 130px;
+  display: none;
+  box-shadow: rgb(0 0 0 / 6%) 0px 0px 12px 3px;
+  z-index: 11;
+  background-color: #fff;
+  left: -44px;
+  top: 44px;
+  padding: 0 15px;
+  animation: growDown 300ms ease-in-out forwards;
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.search,
+.cart {
+  transition: all linear 0.2s;
+  &:hover {
+    color: var(--orange);
+  }
+}
+.user {
+  position: relative;
+  transition: all linear 0.2s;
+
+  &:hover {
+    color: var(--orange);
+    .iconList {
+      display: block;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 215%;
+    height: 20px;
+    left: -13px;
+    top: 23px;
+  }
+}
+
+.cart {
+  position: relative;
+  font-size: 2.4rem;
+  color: var(--primary);
+}
+.circle {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.iconItem {
+  padding: 10px;
+}
+.iconItem + .iconItem {
+  border-top: 1px solid rgb(235, 235, 235);
+}
+.iconLink {
+  color: var(--primary);
+  width: 100%;
+  display: block;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}

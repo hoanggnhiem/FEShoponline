@@ -1,0 +1,75 @@
+.wrapper {
+  height: 750px;
+  background-color: #e7e7e7;
+}
+.content {
+  margin: 0 352px;
+  padding: 146px 15px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+
+  opacity: 0.75;
+  color: white;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-align: center !important;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.image {
+  img {
+    width: 540px;
+  }
+}
+
+.description {
+  .title {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .name {
+    font-size: 7.2rem;
+    line-height: 11rem;
+    margin-bottom: 10px;
+  }
+  .des {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-right: 200px;
+    line-height: 2.5rem;
+  }
+  .buyBtn {
+    width: 150px;
+    height: 50px;
+    background-color: var(--orange);
+    color: #fff;
+    padding: 15px 32px;
+    margin-top: 50px;
+    display: block;
+
+    &:hover {
+      background-color: #000000;
+      color: var(--orange);
+    }
+  }
+}
+.slick-dots {
+  position: absolute;
+  bottom: -90px !important;
+}
+.slick-dots li button:before {
+  font-size: 3rem;
+}
